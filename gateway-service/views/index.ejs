@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>API Gateway</title>
+</head>
+<body>
+    <p><%= JSON.stringify(services) %></p>
+    <div class="container">
+        <h1>API Gateway Services</h1>
+        <div class="services" style="margin: 10px;">
+            <% Object.entries(services).forEach((service, i) => { %>
+                <div class="info-group">
+                    <h2><%= i + 1 %>. Name</h2>
+                    <p><i><%= service[0] %></i></p>
+                </div>
+                <div class="info-group">
+                    <h4>Load Balance Strategy</h4>
+                    <p><%= service[1].loadBalancingStrategy %></p>
+                </div>
+                <div class="instances" style="margin: 10px;">
+                    <h4>Registered Instances</h4>
+                    <% service[1].instances.forEach((instance, index) => { %>
+                        <div class="instance-group">
+                            <label for="index"><b><%= index + 1 %>. URL:</b> <i><%= instance.url %></i></label>
+                        </div>
+                    <% }) %>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

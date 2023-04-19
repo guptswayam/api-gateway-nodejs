@@ -1,0 +1,6 @@
+{
+  "development": {
+    "USERS_SERVICE_ACCESS_SECRET_KEY": "8gog6rQYhu17Gh66zcLn/3au9XQ+FjIODn+RGB1aJXMe4AVV+Bop34vi7dq3txziMoyzhi04eKJMJJy5NIYQ3g==",
+    "GET_USER_API_URL": "/user/:id"
+  }
+}

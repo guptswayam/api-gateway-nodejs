@@ -1,0 +1,8 @@
+{
+  "development": {
+    "BASE_URL": "http://localhost:5000",
+    "REGISTER_SERVICE": "/register",
+    "UNREGISTER_SERVICE": "/unregister",
+    "API_GATEWAY_ACCESS_TOKEN": "Gv/gCPH0o1L11diOH+3hPxMpBcCTzNj64QqUpwpqQkhMGnntnrFjYfBb9uyCRFJAgw/KyNYxjSSvhuAIAdd6Wg=="
+  }
+}
